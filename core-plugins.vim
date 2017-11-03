@@ -20,7 +20,7 @@ Plugin 'VundleVim/Vundle.vim' " vundle must manage itself
 " look and feel
 Plugin 'morhetz/gruvbox'
 Plugin 'vim-airline/vim-airline'
-Plugin 'vim-scripts/utl.vim' "optional for org-mode: Universal Text Linking - Interact with hyperlinks
+Plugin 'vim-scripts/utl.vim'
 
 call vundle#end()
 

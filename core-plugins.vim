@@ -5,23 +5,23 @@
 " prerequisites (some things are reset in the postrequisites)
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+if has("win32")
+  set rtp+=$HOME\.vim\bundle\Vundle.vim "TODO: Put this after the default rtp definition and substitute / by \ in it
+else
+  set rtp+=$HOME/.vim/bundle/Vundle.vim
+endif
 
 call vundle#begin()
-""" BEGIN PLUGINS
+" 'plugin-name' must be used instead of "plugin-name"
 
-
+" core
 Plugin 'VundleVim/Vundle.vim' " vundle must manage itself
 
-Plugin 'bling/vim-airline'
+" look and feel
+Plugin 'morhetz/gruvbox'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-scripts/utl.vim' "optional for org-mode: Universal Text Linking - Interact with hyperlinks
-Plugin 'tpope/vim-repeat' "optional for org-mode: repeat - Repeat actions that would not be repeatable otherwise
-Plugin 'tpope/vim-speeddating' "optional for org-mode: In-/decrease dates the vim way: C-a and C-x
-Plugin 'mattn/calendar-vim' "optional for org-mode: Create a calendar window for timestamp insertion
-Plugin 'jceb/vim-orgmode'
 
-
-""" END PLUGINS
 call vundle#end()
 
 " postrequisites

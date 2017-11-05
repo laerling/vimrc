@@ -17,8 +17,11 @@ call vundle#begin()
 " core
 Plugin 'VundleVim/Vundle.vim' " vundle must manage itself
 
-" look and feel
+" colorthemes
 Plugin 'morhetz/gruvbox'
+Plugin 'vim-scripts/reloaded.vim'
+
+" look and feel
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-scripts/utl.vim'
 

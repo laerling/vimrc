@@ -11,7 +11,10 @@ if has("gui_running")
 	endif
 
 	colo gruvbox
-	set bg=light
+	set bg=dark
+else
+	" TODO: Only load theme when not running on a tty (not in xterm on X)
+	colo reloaded
 endif
 
 " looks
@@ -23,7 +26,7 @@ set showcmd
 
 " searching
 set incsearch
-set hlsearch
+set nohlsearch
 set ignorecase
 
 " Editing behavior

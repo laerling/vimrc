@@ -35,3 +35,4 @@ set backspace=indent,eol,start
 
 " shortcuts
 nmap <C-o> :Utl<CR>
+map <f5> :set wrap!<CR>

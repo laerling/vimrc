@@ -24,6 +24,10 @@ syntax on
 set noequalalways
 set showcmd
 
+" finding files
+set wildmode=longest,list,full
+set wildmenu
+
 " searching
 set incsearch
 set nohlsearch

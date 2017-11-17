@@ -20,6 +20,7 @@ Plugin 'VundleVim/Vundle.vim' " vundle must manage itself
 " colorthemes
 Plugin 'morhetz/gruvbox'
 Plugin 'vim-scripts/reloaded.vim'
+Plugin 'jnurmine/zenburn'
 
 " look and feel
 Plugin 'vim-airline/vim-airline'

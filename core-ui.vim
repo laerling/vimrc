@@ -21,6 +21,7 @@ set guioptions=ag
 syntax on
 set noequalalways
 set showcmd
+set display=truncate,uhex
 
 " finding files
 set wildmode=longest,list,full "Optional TODO: Apply this only for finding files, not for completing option names (works with pressing <tab> twice, though. E. g. with 'nowrap')
@@ -34,6 +35,11 @@ set ignorecase
 " Editing behavior
 set autoindent
 set backspace=indent,eol,start
+
+" other
+if has("win32")
+	"set shell=C:\cygwin64\bin\bash.exe " TODO: Doesn't work yet
+endif
 
 " shortcuts
 nmap <C-o> :Utl<CR>

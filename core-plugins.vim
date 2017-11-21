@@ -16,6 +16,7 @@ call vundle#begin()
 
 " core
 Plugin 'VundleVim/Vundle.vim' " vundle must manage itself
+Plugin 'tpope/vim-sensible'
 
 " colorthemes
 Plugin 'morhetz/gruvbox'

@@ -14,6 +14,7 @@ if has("gui_running")
 else
 	" TODO: Load different themes when running on a tty or in xterm
 	colo gruvbox
+	set bg=dark
 endif
 
 " looks

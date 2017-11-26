@@ -36,6 +36,8 @@ set ignorecase
 " Editing behavior
 set autoindent
 set backspace=indent,eol,start
+" TODO: Make { and } jump to lines with only whitespace in them, too (normally
+" those are skipped)
 
 " other
 if has("win32")

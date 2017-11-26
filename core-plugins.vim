@@ -26,6 +26,7 @@ Plugin 'jnurmine/zenburn'
 " look and feel
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-scripts/utl.vim'
+Plugin 'pelodelfuego/vim-swoop' " TODO: Configure in core files
 
 call vundle#end()
 

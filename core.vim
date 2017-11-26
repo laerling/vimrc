@@ -16,5 +16,6 @@ else
 endif
 
 if filereadable(s:customfile)
+	"TODO: Doesn't seem to work on linux
 	exe 'source ' . s:customfile
 endif

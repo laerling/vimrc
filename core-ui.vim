@@ -43,5 +43,8 @@ if has("win32")
 endif
 
 " shortcuts
+if has("win32")
+	nnoremap <C-z> <nop> "Don't suspend
+endif
 nmap <C-o> :Utl<CR>
 map <f5> :set wrap!<CR>

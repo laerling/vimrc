@@ -42,11 +42,9 @@ set backspace=indent,eol,start
 " other
 if has("win32")
 	"set shell=C:\cygwin64\bin\bash.exe " TODO: Doesn't work yet
+	nnoremap <C-z> <nop> "Don't suspend
 endif
 
 " shortcuts
-if has("win32")
-	nnoremap <C-z> <nop> "Don't suspend
-endif
 nmap <C-o> :Utl<CR>
-map <f5> :set wrap!<CR>
+map <M-w> :set wrap!<CR>

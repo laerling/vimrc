@@ -8,13 +8,7 @@ source ~/.vim/core-ui.vim
 
 
 " run custom vimscript file if it exists
-
-if has("win32")
-	let s:customfile=glob('~\.vim\custom.vim') "TODO: Put this after the default s:customfile definition and substitute / by \ in it. (Like in core-plugins.vim)
-else
-	let s:customfile=glob('~/.vim/custom.vim')
-endif
-
+let s:customfile=glob('~/.vim/custom.vim')
 if filereadable(s:customfile)
 	"TODO: Doesn't seem to work on linux
 	exe 'source ' . s:customfile

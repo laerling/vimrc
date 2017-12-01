@@ -5,11 +5,7 @@
 " prerequisites (some things are reset in the postrequisites)
 set nocompatible
 filetype off
-if has("win32")
-  set rtp+=$HOME\.vim\bundle\Vundle.vim "TODO: Put this after the default rtp definition and substitute / by \ in it
-else
-  set rtp+=$HOME/.vim/bundle/Vundle.vim
-endif
+execute 'set rtp+=' . glob('$HOME/.vim/bundle/Vundle.vim')
 
 call vundle#begin()
 " 'plugin-name' must be used instead of "plugin-name"

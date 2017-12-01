@@ -50,3 +50,4 @@ nmap <C-o> :Utl<CR>
 map <M-w> :set wrap!<CR>
 map <f5> <M-w> " alternative for terminals
 map <M-u> :set hls!<CR> " Like in the man utility
+map <C-w>w :write<CR>

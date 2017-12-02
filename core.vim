@@ -10,6 +10,5 @@ source ~/.vim/core-ui.vim
 " run custom vimscript file if it exists
 let s:customfile=glob('~/.vim/custom.vim')
 if filereadable(s:customfile)
-	"TODO: Doesn't seem to work on linux
 	exe 'source ' . s:customfile
 endif

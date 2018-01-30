@@ -45,7 +45,8 @@ if has("win32")
 	nnoremap <C-z> <nop> "Don't suspend
 endif
 
-" shortcuts
+" Mappings
+nmap Y y$ " For yanking a complete line we have yy.
 nmap <C-o> :Utl<CR>
 map <M-w> :set wrap!<CR>
 map <f5> <M-w> " alternative for terminals

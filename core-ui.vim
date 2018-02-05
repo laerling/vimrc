@@ -25,7 +25,7 @@ set showcmd
 set display=truncate,uhex
 
 " finding files
-set wildmode=longest,list,full "Optional TODO: Apply this only for finding files, not for completing option names (works with pressing <tab> twice, though. E. g. with 'nowrap')
+set wildmode=longest,full "Optional TODO: Apply this only for finding files, not for completing option names
 set wildmenu
 
 " searching

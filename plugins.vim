@@ -28,6 +28,7 @@ Plugin 'pelodelfuego/vim-swoop' " TODO: Configure in core files
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'hsitz/VimOrganizer'
+Plugin 'yegappan/mru'
 
 call vundle#end()
 

@@ -24,9 +24,10 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-scripts/utl.vim'
 Plugin 'pelodelfuego/vim-swoop' " TODO: Configure in core files
 
-" file operations
+" file operations and file type handling
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
+Plugin 'hsitz/VimOrganizer'
 
 call vundle#end()
 

@@ -23,6 +23,7 @@ syntax on
 set noequalalways
 set showcmd
 set display=truncate,uhex
+set diffopt=filler,vertical
 
 " finding files
 set wildmode=longest,full "Optional TODO: Apply this only for finding files, not for completing option names

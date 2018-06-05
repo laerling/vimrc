@@ -13,8 +13,8 @@ if has("gui_running")
 	colo zenburn
 else
 	" TODO: Load different themes when running on a tty or in xterm
-	colo gruvbox
-	set bg=dark
+	colo default
+	set bg=light
 endif
 
 " looks

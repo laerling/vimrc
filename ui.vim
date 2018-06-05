@@ -37,19 +37,21 @@ set ignorecase
 " Editing behavior
 set autoindent
 set backspace=indent,eol,start
-" TODO: Make { and } jump to lines with only whitespace in them, too (normally
-" those are skipped)
+" TODO: Make { and } jump to lines with only whitespace in them, too (normally those are skipped)
 
 " other
 if has("win32")
 	"set shell=C:\cygwin64\bin\bash.exe " TODO: Doesn't work yet
-	nnoremap <C-z> <nop> "Don't suspend
+	nnoremap <C-z> <nop> " Don't suspend
 endif
 
-" Mappings
+" Mappings and Commands
 nmap Y y$ " For yanking a complete line we have yy.
 nmap <C-o> :Utl<CR>
 map <M-w> :set wrap!<CR>
 map <f5> <M-w> " alternative for terminals
 map <M-u> :set hls!<CR> " Like in the man utility
 map <C-w>w :write<CR>
+command! Q :bd!
+map ? :Swoop<CR>i
+" TODO: Generate splash screen buffer, that gives an overview over all user-defined bindings

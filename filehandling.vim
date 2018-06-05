@@ -10,3 +10,4 @@ set encoding=UTF-8
 " VimOrganizer
 autocmd! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 autocmd BufEnter *.org call org#SetOrgFileType()
+autocmd filetype {org} set textwidth=0

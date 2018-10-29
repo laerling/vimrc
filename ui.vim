@@ -12,7 +12,6 @@ if has("gui_running")
 
 	colo zenburn
 else
-	" TODO: Load different themes when running on a tty or in xterm
 	colo default
 	set bg=light
 endif
@@ -26,7 +25,7 @@ set display=truncate,uhex
 set diffopt=filler,vertical
 
 " finding files
-set wildmode=longest,full "Optional TODO: Apply this only for finding files, not for completing option names
+set wildmode=longest,full
 set wildmenu
 
 " searching
@@ -37,11 +36,9 @@ set ignorecase
 " Editing behavior
 set autoindent
 set backspace=indent,eol,start
-" TODO: Make { and } jump to lines with only whitespace in them, too (normally those are skipped)
 
 " other
 if has("win32")
-	"set shell=C:\cygwin64\bin\bash.exe " TODO: Doesn't work yet
 	nnoremap <C-z> <nop> " Don't suspend
 endif
 
@@ -54,4 +51,3 @@ map <M-u> :set hls!<CR> " Like in the man utility
 map <C-w>w :write<CR>
 command! Q :bd!
 map ? :Swoop<CR>i
-" TODO: Generate splash screen buffer, that gives an overview over all user-defined bindings

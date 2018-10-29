@@ -50,4 +50,4 @@ map <f5> <M-w> " alternative for terminals
 map <M-u> :set hls!<CR> " Like in the man utility
 map <C-w>w :write<CR>
 command! Q :bd!
-map ? :Swoop<CR>i
+"map ? :Swoop<CR>i "Call Swoop manually. I need the original behavior of ? more often than swoop.

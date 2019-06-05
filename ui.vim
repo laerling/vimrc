@@ -43,11 +43,13 @@ if has("win32")
 endif
 
 " Mappings and Commands
-nmap Y y$ " For yanking a complete line we have yy.
+" For yanking a complete line we have yy:
+nmap Y y$
 nmap <C-o> :Utl<CR>
 map <M-w> :set wrap!<CR>
-map <f5> <M-w> " alternative for terminals
-map <M-u> :set hls!<CR> " Like in the man utility
+" alternative for terminals:
+map <f5> <M-w>
+" Like in the man utility:
+map <M-u> :set hls!<CR>
 map <C-w>w :write<CR>
 command! Q :bd!
-"map ? :Swoop<CR>i "Call Swoop manually. I need the original behavior of ? more often than swoop.

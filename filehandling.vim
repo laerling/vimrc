@@ -1,5 +1,9 @@
 " file handling - way of finding files, handling filetypes, etc.
 
+" don't use modelines! They're exploitable.
+set nomodeline
+set modelines=0
+
 " navigation behavior
 set autochdir
 

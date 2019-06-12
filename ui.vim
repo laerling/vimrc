@@ -35,6 +35,7 @@ set ignorecase
 
 " Editing behavior
 set autoindent
+set softtabstop=-1
 set backspace=indent,eol,start
 
 " other

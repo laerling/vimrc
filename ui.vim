@@ -39,6 +39,7 @@ set softtabstop=-1
 set backspace=indent,eol,start
 
 " other
+set cb=unnamed
 if has("win32")
 	nnoremap <C-z> <nop> " Don't suspend
 endif

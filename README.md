@@ -1,6 +1,6 @@
 # vim vim vim
 
-Run `git clone https://github.com/hkgit03/vimrc ~/.vim`, then run `make` inside the cloned directory.
+Run `git clone https://github.com/laerling/vimrc ~/.vim`, then run `make` inside the cloned directory.
 This creates the bundle subdirectory and clones vundle into it.
 
 On Unix systems run `make vimrc` inside the cloned directory.

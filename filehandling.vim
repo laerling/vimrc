@@ -14,3 +14,7 @@ set encoding=UTF-8
 " VimOrganizer
 autocmd! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 autocmd BufEnter *.org call org#SetOrgFileType()
+autocmd filetype {org} set textwidth=0
+
+" toml
+autocmd! BufNewFile,BufRead *.toml set syntax=yaml

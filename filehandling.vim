@@ -20,7 +20,12 @@ autocmd filetype {org} set textwidth=0
 autocmd! BufNewFile,BufRead *.toml set syntax=yaml
 
 " NixOS configuration files
-autocmd! BufNewFile,BufRead *.nix set ft=conf
-autocmd BufNewFile,BufRead *.nix set ts=2
-autocmd BufNewFile,BufRead *.nix set sts=0
-autocmd BufNewFile,BufRead *.nix set ai
+augroup nix
+	au!
+	autocmd! BufNewFile,BufRead,BufWrite *.nix set ft=nix
+	autocmd BufNewFile,BufRead,BufWrite *.nix set syntax=conf
+	autocmd FileType nix set ts=2
+	autocmd FileType nix set sw=0
+	autocmd FileType nix set sts=0
+	autocmd FileType nix set ai
+augroup END

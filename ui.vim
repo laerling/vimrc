@@ -55,3 +55,5 @@ map <f5> <M-w>
 map <M-u> :set hls!<CR>
 map <C-w>w :write<CR>
 command! Q :bd!
+" Use enter key for navigating in help buffers
+autocmd FileType help map <CR> <C-]>

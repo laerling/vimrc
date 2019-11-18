@@ -18,3 +18,9 @@ autocmd filetype {org} set textwidth=0
 
 " toml
 autocmd! BufNewFile,BufRead *.toml set syntax=yaml
+
+" NixOS configuration files
+autocmd! BufNewFile,BufRead *.nix set ft=conf
+autocmd BufNewFile,BufRead *.nix set ts=2
+autocmd BufNewFile,BufRead *.nix set sts=0
+autocmd BufNewFile,BufRead *.nix set ai

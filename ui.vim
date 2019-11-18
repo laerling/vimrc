@@ -32,6 +32,7 @@ set wildmenu
 set incsearch
 set nohlsearch
 set ignorecase
+set smartcase
 
 " Editing behavior
 set autoindent

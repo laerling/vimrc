@@ -48,12 +48,14 @@ endif
 autocmd FileType {fugitive} map <buffer> l :Git log --graph --decorate=full --oneline
 autocmd FileType {fugitive} map <buffer> ll :Git log --graph --decorate=full --oneline<CR>
 autocmd FileType {fugitive} map <buffer> lb :Git log --graph --decorate=full --oneline --all<CR>
+" TODO Write syntax file for git graph/git log and use
 
+" TODO Sort the following into the categories above
 " Mappings and Commands
 " For yanking a complete line we have yy:
 nmap Y y$
 nmap <C-o> :Utl<CR>
-map <M-w> :set wrap!<CR>
+map <C-w>t :set wrap!<CR>
 " alternative for terminals:
 map <f5> <M-w>
 " Like in the man utility:

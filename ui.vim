@@ -36,7 +36,8 @@ set smartcase
 
 " Editing behavior
 set autoindent
-set softtabstop=-1
+set softtabstop=0
+set shiftwidth=0
 set backspace=indent,eol,start
 
 " other

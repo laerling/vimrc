@@ -15,19 +15,20 @@ Plugin 'VundleVim/Vundle.vim' " vundle must manage itself
 Plugin 'tpope/vim-sensible'
 
 " colorthemes
+Plugin 'jnurmine/zenburn'
 Plugin 'morhetz/gruvbox'
 Plugin 'vim-scripts/reloaded.vim'
-Plugin 'jnurmine/zenburn'
 
 " look and feel
+Plugin 'pelodelfuego/vim-swoop'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-scripts/utl.vim'
-Plugin 'pelodelfuego/vim-swoop'
 
 " file operations and file type handling
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-fugitive'
 Plugin 'hsitz/VimOrganizer'
+Plugin 'scrooloose/nerdtree'
+Plugin 'spwhitt/vim-nix'
+Plugin 'tpope/vim-fugitive'
 Plugin 'yegappan/mru'
 
 call vundle#end()

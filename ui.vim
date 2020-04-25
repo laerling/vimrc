@@ -45,9 +45,9 @@ if has("win32")
 	nnoremap <C-z> <nop> " Don't suspend
 endif
 " git log commands
-autocmd FileType {fugitive} map <buffer> l :Git log --graph --decorate=full --oneline
 autocmd FileType {fugitive} map <buffer> ll :Git log --graph --decorate=full --oneline<CR>
 autocmd FileType {fugitive} map <buffer> lb :Git log --graph --decorate=full --oneline --all<CR>
+autocmd FileType {fugitive} map <buffer> l<space> :Git log --graph --decorate=full --oneline
 " TODO Write syntax file for git graph/git log and use
 
 " TODO Sort the following into the categories above

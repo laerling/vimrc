@@ -23,6 +23,7 @@ Plugin 'jnurmine/zenburn'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-scripts/utl.vim'
 Plugin 'pelodelfuego/vim-swoop'
+Plugin 'colepeters/spacemacs-theme.vim'
 
 " file operations and file type handling
 Plugin 'scrooloose/nerdtree'

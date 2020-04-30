@@ -5,7 +5,7 @@ if has("gui_running")
 
 	" OS-specific GUI settings
 	if has("win32")
-		set guifont=Consolas
+		set guifont=Consolas:h12
 	else
 		set guifont=Source\ Code\ Pro\ 10
 	endif

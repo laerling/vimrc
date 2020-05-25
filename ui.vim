@@ -52,15 +52,17 @@ autocmd FileType {fugitive} map <buffer> l<space> :Git log --graph --decorate=fu
 
 " TODO Sort the following into the categories above
 " Mappings and Commands
-" For yanking a complete line we have yy:
+"go directly to mark instead of beginning of line
+map ' `
+"For yanking a complete line we have yy:
 nmap Y y$
 nmap <C-o> :Utl<CR>
 map <C-w>t :set wrap!<CR>
-" alternative for terminals:
+"alternative for terminals:
 map <f5> <M-w>
-" Like in the man utility:
+"Like in the man utility:
 map <M-u> :set hls!<CR>
 map <C-w>w :write<CR>
 command! Q :bd!
-" Use enter key for navigating in help buffers
+"Use enter key for navigating in help buffers
 autocmd FileType help map <CR> <C-]>

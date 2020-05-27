@@ -5,7 +5,7 @@ if has("gui_running")
 
 	" OS-specific GUI settings
 	if has("win32")
-		set guifont=Consolas
+		set guifont=Consolas:h12
 	else
 		set guifont=Source\ Code\ Pro\ 10
 	endif
@@ -45,17 +45,25 @@ set cb=unnamed
 if has("win32")
 	nnoremap <C-z> <nop> " Don't suspend
 endif
+" git log commands
+autocmd FileType {fugitive} map <buffer> ll :Git log --graph --decorate=full --oneline<CR>
+autocmd FileType {fugitive} map <buffer> lb :Git log --graph --decorate=full --oneline --all<CR>
+autocmd FileType {fugitive} map <buffer> l<space> :Git log --graph --decorate=full --oneline
+" TODO Write syntax file for git graph/git log and use
 
+" TODO Sort the following into the categories above
 " Mappings and Commands
-" For yanking a complete line we have yy:
+"go directly to mark instead of beginning of line
+map ' `
+"For yanking a complete line we have yy:
 nmap Y y$
 nmap <C-o> :Utl<CR>
-map <M-w> :set wrap!<CR>
-" alternative for terminals:
+map <C-w>t :set wrap!<CR>
+"alternative for terminals:
 map <f5> <M-w>
-" Like in the man utility:
+"Like in the man utility:
 map <M-u> :set hls!<CR>
 map <C-w>w :write<CR>
 command! Q :bd!
-" Use enter key for navigating in help buffers
+"Use enter key for navigating in help buffers
 autocmd FileType help map <CR> <C-]>

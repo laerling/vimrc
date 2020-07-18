@@ -31,11 +31,17 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'spwhitt/vim-nix'
 Plugin 'tpope/vim-fugitive'
 Plugin 'yegappan/mru'
+Plugin 'dense-analysis/ale'
 
 call vundle#end()
 
 " postrequisites
 filetype plugin indent on
+
+" linters
+let g:ale_fixers = { 'go': [ 'goimports' ], 'rust': [ 'rustfmt' ] }
+let g:ale_fix_on_save = 1
+let g:ale_rust_cargo_use_clippy = 1
 
 
 " for help:

@@ -67,3 +67,7 @@ map <C-w>w :write<CR>
 command! Q :bd!
 "Use enter key for navigating in help buffers
 autocmd FileType help map <CR> <C-]>
+
+" linting
+" Maybe it's easy enough to use the location list, dunno
+nmap ga :ALENextWrap<CR>

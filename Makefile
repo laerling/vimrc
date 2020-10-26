@@ -1,6 +1,6 @@
 .PHONY: vimrc
 
-bundle/Vundle.vim:
+bundle/Vundle.vim: vimrc
 	mkdir -p bundle
 	cd bundle; git clone "https://github.com/VundleVim/Vundle.vim"
 

@@ -39,6 +39,7 @@ autocmd filetype {yaml} set ts=2
 autocmd filetype {python} set ts=4  " pep8
 autocmd filetype {python} set sts=0
 autocmd filetype {python} set sw=0
+autocmd filetype {python} set number
 
 " graphviz dot files
 autocmd filetype {dot} set ts=2

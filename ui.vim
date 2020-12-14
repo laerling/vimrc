@@ -40,6 +40,10 @@ set softtabstop=0
 set shiftwidth=0
 set backspace=indent,eol,start
 
+" turn off bell
+set visualbell
+set t_vb=
+
 " other
 set cb=unnamed
 if has("win32")

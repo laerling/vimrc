@@ -39,9 +39,12 @@ call vundle#end()
 filetype plugin indent on
 
 " linters
+let g:ale_rust_cargo_use_clippy = 1
+let b:ale_python_pylint_use_global = 1
+
+" fixers/formatters
 let g:ale_fixers = { 'go': [ 'goimports' ], 'rust': [ 'rustfmt' ] }
 let g:ale_fix_on_save = 1
-let g:ale_rust_cargo_use_clippy = 1
 
 
 " for help:

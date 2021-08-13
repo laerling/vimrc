@@ -28,7 +28,7 @@ Plugin 'vim-scripts/utl.vim'
 " file operations and file type handling
 Plugin 'hsitz/VimOrganizer'
 Plugin 'scrooloose/nerdtree'
-Plugin 'spwhitt/vim-nix'
+Plugin 'LnL7/vim-nix'
 Plugin 'tpope/vim-fugitive'
 Plugin 'yegappan/mru'
 Plugin 'dense-analysis/ale'

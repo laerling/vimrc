@@ -10,7 +10,8 @@ if has("gui_running")
 		set guifont=Source\ Code\ Pro\ 10
 	endif
 
-	colo zenburn
+	colo default
+        set guifont="Ubuntu Mono 13"
 else
 	colo default
 	set bg=light

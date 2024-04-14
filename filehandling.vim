@@ -43,3 +43,9 @@ autocmd filetype {python} set number
 
 " graphviz dot files
 autocmd filetype {dot} set ts=2
+
+" Makefiles
+autocmd! filetype {make} set noexpandtab
+
+" nix files
+autocmd! filetype {nix} set number

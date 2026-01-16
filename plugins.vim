@@ -46,6 +46,10 @@ let b:ale_python_pylint_use_global = 1
 let g:ale_fixers = { 'go': [ 'goimports' ], 'rust': [ 'rustfmt' ] }
 let g:ale_fix_on_save = 1
 
+" other
+" UTL: If firefox isn't available, librewolf surely is
+let g:utl_cfg_hdl_scm_http_system = "silent !which firefox >/dev/null && (firefox -remote 'ping()' && firefox -remote 'openURL( %u )' || firefox '%u#%f' &) || librewolf '%u#%f' &"
+
 
 " for help:
 

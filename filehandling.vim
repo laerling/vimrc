@@ -34,6 +34,7 @@ autocmd! BufNewFile,BufRead *.toml set ft=yaml
 
 " yaml
 autocmd filetype {yaml} set ts=2
+autocmd BufEnter *.alerts set ft=yaml
 
 " python. TODO: Use ale plus a python linter
 autocmd filetype {python} set ts=4  " pep8

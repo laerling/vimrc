@@ -62,7 +62,8 @@ autocmd FileType {fugitive} map <buffer> l<space> :Git log --graph --decorate=fu
 map ' `
 "For yanking a complete line we have yy:
 nmap Y y$
-nmap <C-o> :Utl<CR>
+" FIXME remaps C-o which is used to navigate back in the jumplist
+"nmap <C-o> :Utl<CR>
 map <C-w>t :set wrap!<CR>
 "alternative for terminals:
 map <f5> <M-w>
